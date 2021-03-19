@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".aktivnosti.DodajKvizAkt">
+
+    <Spinner
+        android:id="@+id/spKategorije"
+        android:layout_width="match_parent"
+        android:layout_height="37dp" />
+
+    <EditText
+        android:id="@+id/etNaziv"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Pitanja u kvizu"
+        android:textColor="#a4c639"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/lvDodanaPitanja"
+        android:layout_width="match_parent"
+        android:layout_height="127dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Moguca pitanja"
+        android:textAlignment="center"
+        android:textColor="#ebe500"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lvMogucaPitanja"
+        android:layout_width="match_parent"
+        android:layout_height="117dp" />
+
+    <Button
+        android:id="@+id/btnDodajKviz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj Kviz"
+        android:textColor="#03baff"/>
+
+    <Button
+        android:id="@+id/btnImportKviz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importuj Kviz" />
+
+</LinearLayout>
